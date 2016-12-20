@@ -32,7 +32,7 @@ gulp.task('serve', ['html', 'sass', 'images', 'scripts', 'fonts'], function() {
     gulp.watch(sassSources, ['sass', 'fonts', 'images']);
     gulp.watch("./components/html/**/*.html", ['html']);
 
-    gulp.watch(outputDir + "/*.html", ['reload']);
+    gulp.watch(outputDir + "/**/*.html", ['reload']);
     gulp.watch(outputDir + "/assets/js/*.js", ['reload']);
 });
 
